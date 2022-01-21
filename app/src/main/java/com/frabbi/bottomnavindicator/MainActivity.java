@@ -22,6 +22,6 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
         NavController navController = Navigation.findNavController(this, R.id.fragmentContainer);
         AppBarConfiguration build = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this,navController,build);
-      // NavigationUI.setupWithNavController(binding.bottomNavigationView,navController);
+       NavigationUI.setupWithNavController(binding.bottomNavigationView,navController);
     }
 }
